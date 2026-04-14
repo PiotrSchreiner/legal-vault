@@ -1,26 +1,6 @@
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-zinc-50 font-sans dark:bg-zinc-950">
-      <nav className="flex items-center justify-between px-8 py-6 bg-white border-b border-zinc-200 dark:bg-zinc-900 dark:border-zinc-800">
-        <div className="text-2xl font-bold tracking-tighter text-black dark:text-white">
-          LEGAL<span className="text-blue-600">VAULT</span>
-        </div>
-        <div className="hidden space-x-8 text-sm font-medium text-zinc-600 dark:text-zinc-400 md:flex">
-          <a
-            href="#features"
-            className="hover:text-black dark:hover:text-white"
-          >
-            Features
-          </a>
-          <a href="#pricing" className="hover:text-black dark:hover:text-white">
-            Pricing
-          </a>
-          <a href="#about" className="hover:text-black dark:hover:text-white">
-            About
-          </a>
-        </div>
-      </nav>
-
       <main className="flex flex-col items-center justify-center flex-1 px-6 py-20 text-center">
         <div className="max-w-4xl mb-16">
           <h1 className="mb-6 text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 md:text-6xl">
@@ -45,9 +25,12 @@ export default function Home() {
               Keep your financial, identity, and insurance records in one secure
               place. Share access with your attorney with a single click.
             </p>
-            <button className="w-full py-4 text-lg font-semibold text-white transition-colors bg-blue-600 rounded-2xl hover:bg-blue-700">
+            <a
+              href="/profile"
+              className="w-full py-4 text-lg font-semibold text-white transition-colors bg-blue-600 rounded-2xl hover:bg-blue-700 block text-center"
+            >
               Get Started for Free
-            </button>
+            </a>
           </div>
 
           <div className="flex flex-col p-10 transition-all bg-zinc-900 border border-zinc-800 rounded-3xl shadow-sm hover:shadow-xl dark:bg-black dark:border-zinc-700">
